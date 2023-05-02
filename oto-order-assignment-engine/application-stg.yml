@@ -6,9 +6,6 @@ spring:
     url: jdbc:mysql://34.77.234.32:3306/TryOTODyn
     username: ismail
     password: OTO2023ismail+
-    jpa:
-      hibernate:
-        naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
   main:
      allow-bean-definition-overriding: true
 
@@ -18,8 +15,15 @@ spring:
       host: localhost
       port: 7777
 
+
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
 logging:
   level:
     org:
       hibernate:
         SQL: DEBUG
+
