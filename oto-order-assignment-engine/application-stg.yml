@@ -8,8 +8,7 @@ spring:
     password: OTO2023ismail+
     jpa:
       hibernate:
-        naming:
-          physicalstrategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
   main:
      allow-bean-definition-overriding: true
 
@@ -18,3 +17,9 @@ spring:
     redis:
       host: localhost
       port: 7777
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
