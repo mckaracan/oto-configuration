@@ -10,8 +10,10 @@ spring:
       hibernate:
         naming:
           physicalstrategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  main:
+     allow-bean-definition-overriding: true
 
-# Redis
+  # Redis
   data:
     redis:
       host: localhost
