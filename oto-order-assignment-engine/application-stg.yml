@@ -15,7 +15,6 @@ spring:
       host: localhost
       port: 7777
 
-
   jpa:
     hibernate:
       naming:
