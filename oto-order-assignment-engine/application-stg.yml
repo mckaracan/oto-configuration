@@ -1,9 +1,9 @@
 # Datasource
 spring:
   datasource:
-    url: jdbc:mysql://34.77.234.32:3306/TryOTODyn
-    username: ismail
-    password: OTO2023ismail+
+    url: jdbc:mysql://10.56.112.3:3306/TryOTODyn
+    username: service_write
+    password: Pl.2020write
   main:
      allow-bean-definition-overriding: true
   jpa:
@@ -15,8 +15,8 @@ spring:
 # Redis
   data:
     redis:
-      host: localhost
-      port: 7777
+      host: 10.145.167.227
+      port: 6379
 
 #logging
 logging:
@@ -24,7 +24,4 @@ logging:
     org:
       hibernate:
         SQL: DEBUG
-
-api:
-  test: 123
 
